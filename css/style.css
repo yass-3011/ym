@@ -571,11 +571,11 @@ button i {
     width:30px;
     position: relative;
     right: -26px;
-  }/*
+  }
   button:last-child {
     position: relative;
     right: -26px;
-  }*/
+  }
   .container {
     width: 320px;
   }
