@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Start Header -->
-    <div class="header">
+    <div class="header" id="head">
       <div class="container">
         <img class="logo" src="img/Untitled-1.png" alt="" />
         <div class="nav">
@@ -45,17 +45,27 @@
             ><i class="fa-brands fa-twitter"></i
           ></a>
         </div>
-        <div class="links">
-          <span class="icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-          <ul>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="#txt">More About Me</a></li>
-          </ul>
+        <div class="right">
+          <div class="links">
+            <span class="icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <ul id="ul">
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+              <li><a href="#txt">More About Me</a></li>
+            </ul>
+          </div>
+          <!-- Start Dark , Light Mood -->
+          <button onclick="light()" id="btn">
+            <i class="fa-solid fa-sun" id="i"></i>
+          </button>
+          <button onclick="dark()" id="btn2">
+            <i class="fa-solid fa-moon" id="i2"></i>
+          </button>
+          <!-- End Dark , Light Mood -->
         </div>
       </div>
     </div>
@@ -81,7 +91,7 @@
             and now I am studying PHP and Laravel, and I am trying to become
             professional in them.
           </p>
-          <hr />
+          <hr / id="hr">
           <p>
             And i'm in level two in Study in Abo Qir High institute for computer
             and information system
@@ -91,7 +101,7 @@
     </div>
     <!-- End About Me -->
     <!-- Start Footer -->
-    <div class="footer">
+    <div class="footer" id="end">
       <div class="container">
         <div class="footer-content">
           <p>Made By Yassir Muhammad © 2022</p>
@@ -118,5 +128,7 @@
       </div>
     </div>
     <!-- End Footer -->
+    <script src="javascript/index.js"></script>
+    <script src="javascript/about.js"></script>
   </body>
 </html>
