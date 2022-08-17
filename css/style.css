@@ -565,13 +565,13 @@ button i {
     position: relative;
     right: 15px;
     width: 25%;
-  }
+  }/*
   
   button {
     width:40px;
     position: relative;
     right: -26px;
-  }
+  }*/
   button:last-child {
     position: relative;
     right: -26px;
