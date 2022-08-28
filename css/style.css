@@ -566,6 +566,7 @@ button i {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   /* padding: 20px; */
+  height: 410px;
 }
 .certificate .cert img {
   width: 350px;
@@ -581,29 +582,50 @@ button i {
 .certificate .cert p {
   padding: 5px;
 }
+.cert a {
+  margin: 40px;
+  font-size: 25px;
+  color: var(--font-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.cert a:hover {
+  text-shadow: 0 0 15px var(--font-color);
+}
+.cert a i {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.cert a:hover i {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 /* Start Media */
 /* Small */
 @media (min-width: 320px) and (max-width: 500px) {
+  .container {
+    width: 320px;
+  }
   .certificate .cert img {
     width: 300px;
   }
   .right {
     position: relative;
     right: 15px;
-    width: 35%;
-  }
-  
-  button {
-    width:30px;
-/*     position: relative;
-    right: -26px; */
+    width: 25%;
   }
   button:last-child {
     position: relative;
     right: -26px;
-  }
-  .container {
-    width: 320px;
   }
   .landing {
     background-image: url(../img/background1.png);
@@ -655,6 +677,9 @@ button i {
   }
 }
 @media (min-width: 500px) and (max-width: 780px) {
+  .container {
+    width: 480px;
+  }
   .right {
     position: relative;
     right: 15px;
@@ -697,6 +722,9 @@ button i {
   }
 }
 @media (min-width: 780px) and (max-width: 992px) {
+  .container {
+    width: 750px;
+  }
   .right {
     position: relative;
     right: 15px;
@@ -705,9 +733,6 @@ button i {
   button:last-child {
     position: relative;
     right: -26px;
-  }
-  .container {
-    width: 750px;
   }
   .landing {
     background-image: url(../img/background1.png);
@@ -742,6 +767,9 @@ button i {
   }
 }
 @media (min-width: 992px) and (max-width: 1700px) {
+  .container {
+    width: 970px;
+  }
   .right {
     position: relative;
     right: 15px;
@@ -751,9 +779,7 @@ button i {
     position: relative;
     right: -26px;
   }
-  .container {
-    width: 970px;
-  }
+
   .landing {
     background-image: url(../img/background1.png);
     background-size: cover;
